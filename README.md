@@ -80,5 +80,17 @@ Salvando fisicamente uma imagem em diretorio
 </pre>
 
 
+---------------------------------------
+
+# MYSQL
+Alterando mysql para aceitar nomes de tabelas minusculo/maiusculo, editando o arquivo: **my.cnf**
+> estar no diretório onde está o arquivo DockerFile
+<pre>
+<code>
+ [mysqld]
+ lower_case_table_names=1
+</code>
+</pre>
+
 
 
