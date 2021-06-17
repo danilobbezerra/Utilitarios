@@ -67,11 +67,7 @@ SERVERID Pode ser obtido na lista de servidores abaixo
 ---------------------------------------
 # Alterando idioma sistema linux (Debian)
 
-<pre>
-<code>
-sudoedit /etc/default/locale
-</code>
-</pre>
+<pre><code>sudoedit /etc/default/locale</code></pre>
 > Alterar arquivo para: LANG="pt_BR.UTF-8" onde **pt_BR** é o idioma desejado
 
 
@@ -80,26 +76,14 @@ sudoedit /etc/default/locale
 # Comandos Docker
 Gerando uma imagem docker
 > estar no diretório onde está o arquivo DockerFile
-<pre>
-<code>
-  docker build -t NomeImagem -f Dockerfile .
-</code>
-</pre>
+<pre><code>docker build -t NomeImagem -f Dockerfile .</code></pre>
 
 Salvando fisicamente uma imagem em diretorio
-<pre>
-<code>
- docker image save NomeImagem -o c:\NomeImagem.img (com ou sem extensao)
-</code>
-</pre>
+<pre><code>docker image save NomeImagem -o c:\NomeImagem.img (com ou sem extensao)</code></pre>
 
 
 Sobe as imagens especificadas em um docker compose
-<pre>
-<code>
- docker-compose up -d --build
-</code>
-</pre>
+<pre><code>docker-compose up -d --build</code></pre>
 
 
 
