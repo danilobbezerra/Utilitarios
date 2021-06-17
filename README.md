@@ -50,6 +50,25 @@ sudo systemctl status **kestrel-helloapp.service**
 
 </code></pre>
 
+
+### REMOVE UM DIRETORIO E ARQUIVOS SEM CONFIRMAÇÃO
+<pre><code>
+rm -rf dirname
+</code></pre>
+
+### REMOVE UM DIRETORIO E ARQUIVOS SEM CONFIRMAÇÃO
+<pre><code>
+rm -rf dirname
+</code></pre>
+
+
+### COPIAR ARQUIVOS DE UM SERVIDOR PARA OUTRO
+<pre><code>
+scp -r root@XXX.XXX.XXX.XXX:/diretorio/origem/arquivos/ou/pasta /diretorio/destino
+ou
+scp -r /diretorio/origem/arquivos/ou/pasta root@XXX.XXX.XXX.XXX:/diretorio/destino
+</code></pre>
+
 ---------------------------------------
 # Alterando idioma sistema linux (Debian)
 
@@ -78,6 +97,15 @@ Salvando fisicamente uma imagem em diretorio
  docker image save NomeImagem -o c:\NomeImagem.img (com ou sem extensao)
 </code>
 </pre>
+
+
+Sobe as imagens especificadas em um docker compose
+<pre>
+<code>
+ docker-compose up -d --build
+</code>
+</pre>
+
 
 
 ---------------------------------------
