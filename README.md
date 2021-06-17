@@ -36,38 +36,33 @@ WantedBy=multi-user.target
 </code></pre>
 
 ### Habilitar/Desabilitar o serviço
-<pre><code>
-sudo systemctl enable **kestrel-helloapp.service**
-sudo systemctl disable **kestrel-helloapp.service**
+<pre><code>sudo systemctl enable **kestrel-helloapp.service**</code></pre>
+<pre><code>sudo systemctl disable **kestrel-helloapp.service**</code></pre>
 
-</code></pre>
 
 ### Start/Restart/Status
-<pre><code>
-sudo systemctl start **kestrel-helloapp.service**
-sudo systemctl restart **kestrel-helloapp.service**
-sudo systemctl status **kestrel-helloapp.service**
-
-</code></pre>
-
+<pre><code>sudo systemctl start **kestrel-helloapp.service**</code></pre>
+<pre><code>sudo systemctl restart **kestrel-helloapp.service**</code></pre>
+<pre><code>sudo systemctl status **kestrel-helloapp.service**</code></pre>
 
 ### REMOVE UM DIRETORIO E ARQUIVOS SEM CONFIRMAÇÃO
-<pre><code>
-rm -rf dirname
-</code></pre>
-
-### REMOVE UM DIRETORIO E ARQUIVOS SEM CONFIRMAÇÃO
-<pre><code>
-rm -rf dirname
-</code></pre>
-
+<pre><code>rm -rf dirname</code></pre>
 
 ### COPIAR ARQUIVOS DE UM SERVIDOR PARA OUTRO
-<pre><code>
-scp -r root@XXX.XXX.XXX.XXX:/diretorio/origem/arquivos/ou/pasta /diretorio/destino
+<pre><code>scp -r root@XXX.XXX.XXX.XXX:/diretorio/origem/arquivos/ou/pasta /diretorio/destino</code></pre>
 ou
-scp -r /diretorio/origem/arquivos/ou/pasta root@XXX.XXX.XXX.XXX:/diretorio/destino
-</code></pre>
+<pre><code>scp -r /diretorio/origem/arquivos/ou/pasta root@XXX.XXX.XXX.XXX:/diretorio/destino</code></pre>
+
+### RODAR SPEED TEST NO LINUX (Testado no Ubuntu)
+<pre><code>curl -s https://install.speedtest.net/app/cli/install.deb.sh | sudo bash</code></pre>
+<pre><code>sudo apt-get install speedtest</code></pre>
+
+FORMA DE TESTAR
+<pre><code>speedtest -s SERVERID -f csv|tsv|jsonl|json|json-pretty</code></pre>
+
+SERVERID Pode ser obtido na lista de servidores abaixo
+<pre><code>https://c.speedtest.net/speedtest-servers-static.php</code></pre>
+
 
 ---------------------------------------
 # Alterando idioma sistema linux (Debian)
