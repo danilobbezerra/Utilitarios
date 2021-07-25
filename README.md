@@ -85,6 +85,18 @@ Salvando fisicamente uma imagem em diretorio
 Sobe as imagens especificadas em um docker compose
 <pre><code>docker-compose up -d --build</code></pre>
 
+# Docker Compose - Utilitários
+
+> Criar um volume apontando para um diretório de rede
+<pre><code>
+volumes:
+  nome_volume:
+    driver_opts: 
+      type: cifs 
+      o: username=******,password=******
+      device: "//192.168.0.1/caminho/caminho/caminho"
+
+</code></pre>
 
 
 ---------------------------------------
